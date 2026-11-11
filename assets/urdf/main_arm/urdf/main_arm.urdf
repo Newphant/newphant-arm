@@ -1,0 +1,524 @@
+<robot name="main_arm">
+<material name= "printed">
+    <color rgba = "0.9 0.9 0.0 1.0"/>
+</material>
+<material name= "sts3215">
+    <color rgba="0.1 0.1 0.1 1.0"/>
+</material>
+
+    <link name="servo_elbow_ShA">
+        <inertial>
+            <mass value="0.06" />
+            <origin xyz="0.0159729 0.01025 0.016199" rpy="0 -0 0" />
+            <inertia ixx="1.29868e-05" ixy="0" ixz="0" iyy="1.55091e-05" iyz="0" izz="8.3837e-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0.00846974 0.0720049 -0.0769181" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servo_elbow_ShA.stl" scale="1 1 1" />
+            </geometry>
+          <material name="sts3215"/>
+        </visual>
+    <collision><origin xyz="0.00846974 0.0720049 -0.0769181" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servo_elbow_ShA.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+
+    <link name="servo_WristRoll">
+        <inertial>
+            <mass value="0.06" />
+            <origin xyz="0.0160729 -0.01025 0.016199" rpy="0 -0 0" />
+            <inertia ixx="1.29868e-05" ixy="0" ixz="0" iyy="1.55091e-05" iyz="0" izz="8.3837e-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0.00856974 0.0515049 -0.0769181" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servo_WristRoll.stl" scale="1 1 1" />
+            </geometry>
+            <material name="sts3215"/>
+        </visual>
+        <collision>
+            <origin xyz="0.00856974 0.0515049 -0.0769181" rpy="0 -0 0" />
+                <geometry>
+                    <mesh filename="asset/servo_WristRoll.stl" scale="1 1 1" />
+                </geometry>
+        </collision>
+    </link>
+    <link name="servo_gripperAct">
+        <inertial>
+            <mass value="0.06" />
+            <origin xyz="0.0158729 -0.01025 0.016199" rpy="0 -0 0" />
+            <inertia ixx="1.29868e-05" ixy="0" ixz="0" iyy="1.55091e-05" iyz="0" izz="8.3837e-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0.00836974 0.0515049 -0.0769181" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servo_GripperACT.stl" scale="1 1 1" />
+            </geometry>
+          <material name="sts3215"/>
+        </visual>
+    <collision><origin xyz="0.00836974 0.0515049 -0.0769181" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servo_GripperACT.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="servo_Wrist_elbow">
+        <inertial>
+            <mass value="0.06" />
+            <origin xyz="0.0157729 -0.01025 0.016199" rpy="0 -0 0" />
+            <inertia ixx="1.29868e-05" ixy="0" ixz="0" iyy="1.55091e-05" iyz="0" izz="8.3837e-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0.00826974 0.0515049 -0.0769181" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servo_wrist_elbow.stl" scale="1 1 1" />
+            </geometry>
+          <material name="sts3215"/>
+        </visual>
+    <collision><origin xyz="0.00826974 0.0515049 -0.0769181" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servo_wrist_elbow.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="servo_shouldArm_should">
+        <inertial>
+            <mass value="0.06" />
+            <origin xyz="0.0159729 -0.01025 0.016199" rpy="0 -0 0" />
+            <inertia ixx="1.29868e-05" ixy="0" ixz="0" iyy="1.55091e-05" iyz="0" izz="8.3837e-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0.00846974 0.0515049 -0.0769181" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servo_ShA_should.stl" scale="1 1 1" />
+            </geometry>
+          <material name="sts3215"/>
+        </visual>
+    <collision><origin xyz="0.00846974 0.0515049 -0.0769181" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servo_ShA_should.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="servo_shoulderpan">
+        <inertial>
+            <mass value="0.06" />
+            <origin xyz="0.0157729 0.01025 0.016199" rpy="0 -0 0" />
+            <inertia ixx="1.29868e-05" ixy="0" ixz="0" iyy="1.55091e-05" iyz="0" izz="8.3837e-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0.00826974 0.0720049 -0.0769181" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servo_should_base.stl" scale="1 1 1" />
+            </geometry>
+          <material name="sts3215"/>
+        </visual>
+    <collision><origin xyz="0.00826974 0.0720049 -0.0769181" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servo_should_base.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="adapter_head">
+        <inertial>
+            <mass value="0.019" />
+            <origin xyz="-0.00059433 0.0162047 0.00202983" rpy="0 -0 0" />
+            <inertia ixx="2.75408e-06" ixy="0" ixz="0" iyy="1.38154e-05" iyz="0" izz="1.40231e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0.00703095 0.0699251 -0.0596998" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/adapter_head.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="0.00703095 0.0699251 -0.0596998" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/adapter_head.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+
+
+
+    <link name="base">
+        <inertial>
+            <mass value="0.175" />
+            <origin xyz="0.00770222 0.0304103 0.0236808" rpy="0 -0 0" />
+            <inertia ixx="0.000238571" ixy="0" ixz="0" iyy="0.000310334" iyz="0" izz="0.000346098" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/base_link.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/base_link.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="base_plate">
+        <inertial>
+            <mass value="0.0360035" />
+            <origin xyz="0.00522523 0.0210279 -0.0146425" rpy="0 -0 0" />
+            <inertia ixx="1.97378e-05" ixy="0" ixz="0" iyy="2.28853e-05" iyz="0" izz="2.2204e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="-0.0 0.0594811 -0.0607" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/base_plate.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="-0.0 0.0594811 -0.0607" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/base_plate.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="coupler_left">
+        <inertial>
+            <mass value="0.00699978" />
+            <origin xyz="-0.00232214 0.0148166 0.00259404" rpy="0 -0 0" />
+            <inertia ixx="3.01851e-06" ixy="0" ixz="0" iyy="2.67734e-05" iyz="0" izz="3.06407e-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0.0547096 0.00287064 -0.0591543" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/coupler_left.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="0.0547096 0.00287064 -0.0591543" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/coupler_left.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="coupler_right">
+        <inertial>
+            <mass value="0.00699978" />
+            <origin xyz="0.00232214 0.0148166 0.00259404" rpy="0 -0 0" />
+            <inertia ixx="3.01851e-06" ixy="0" ixz="0" iyy="2.67734e-5" iyz="0" izz="3.06407e-06" />
+        </inertial>
+        <visual>
+            <origin xyz="-0.0457698 0.00287064 -0.0591543" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/coupler_right.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="-0.0457698 0.00287064 -0.0591543" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/coupler_right.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="crank_left">
+        <inertial>
+            <mass value="0.00350053" />
+            <origin xyz="-0.0100083 -2.80286e-05 -0.00225009" rpy="0 -0 0" />
+            <inertia ixx="1.20432e-05" ixy="0" ixz="0" iyy="9.40499e-06" iyz="0" izz="1.04911e-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0.0179546 0.0231341 -0.0638941" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/crank_left.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="0.0179546 0.0231341 -0.0638941" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/crank_left.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="crank_right">
+        <inertial>
+            <mass value="0.0034911" />
+            <origin xyz="0.0100013 -3.10191e-05 -0.0022501" rpy="0 -0 0" />
+            <inertia ixx="1.20263e-05" ixy="0" ixz="0" iyy="9.40417e-06" iyz="0" izz="1.0489e-06" />
+        </inertial>
+        <visual>
+            <origin xyz="-0.00901481 0.0231341 -0.0638941" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/crank_right.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="-0.00901481 0.0231341 -0.0638941" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/crank_right.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="elbow_arm">
+        <inertial>
+            <mass value="0.0550237" />
+            <origin xyz="0.018507 -0.0744213 0.000250363" rpy="0 -0 0" />
+            <inertia ixx="8.29456e-05" ixy="0" ixz="0" iyy="2.15612e-05" iyz="0" izz="9.68997e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0.014005 0.0596384 0.106823" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/elbow_arm.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="0.014005 0.0596384 0.106823" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/elbow_arm.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="rocker_left">
+        <inertial>
+            <mass value="0.00199998" />
+            <origin xyz="-0.0224999 -7.18536e-05 -0.00225022" rpy="0 -0 0" />
+            <inertia ixx="1.40133e-05" ixy="0" ixz="0" iyy="4.25253e-05" iyz="0" izz="4.32516e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0.0097099 0.00272783 -0.0639547" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/rocker_right.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="0.0097099 0.00272783 -0.0639547" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/rocker_right.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="rocker_left_1">
+        <inertial>
+            <mass value="0.00199998" />
+            <origin xyz="0.0224999 7.18536e-05 0.00225022" rpy="0 -0 0" />
+            <inertia ixx="1.40133e-05" ixy="0" ixz="0" iyy="4.25253e-05" iyz="0" izz="4.32516e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0.0547096 0.00287153 -0.0594543" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/rocker_left.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="0.0547096 0.00287153 -0.0594543" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/rocker_left.stl" scale="1 1 1" />
+
+            </geometry>
+            </collision></link>
+    <link name="servotip">
+        <inertial>
+            <mass value="0.0015" />
+            <origin xyz="0.0 0.0 0.00262943" rpy="0 -0 0" />
+            <inertia ixx="4.26e-6" ixy="0" ixz="0" iyy="4.25e-6" iyz="0" izz="7.191e-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0.0219142 0.0378575 -0.0453451" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servotip.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="0.0219142 0.0378575 -0.0453451" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servotip.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="servotip_1">
+        <inertial>
+            <mass value="0.0015" />
+            <origin xyz="0.0 0.0 0.0082181" rpy="0 -0 0" />
+            <inertia ixx="3.23e-6" ixy="0" ixz="0" iyy="3.145e-6" iyz="0" izz="3.704e-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0.0219142 0.0378575 -0.0493451" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servotip_1.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="0.0219142 0.0378575 -0.0493451" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/servotip_1.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="shoulder">
+        <inertial>
+            <mass value="0.038" />
+            <origin xyz="0.000142718 -0.0247379 -0.0208606" rpy="0 -0 0" />
+            <inertia ixx="2.77468e-05" ixy="0" ixz="0" iyy="2.15077e-05" iyz="0" izz="1.43619e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="-0.0078711 0.0272652 -0.0717685" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/should.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="-0.0078711 0.0272652 -0.0717685" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/should.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="shoulder_arm">
+        <inertial>
+            <mass value="0.0539831" />
+            <origin xyz="0.0185584 0.0731213 -0.000376907" rpy="0 -0 0" />
+            <inertia ixx="8.52246e-05" ixy="0" ixz="0" iyy="2.29138e-05" iyz="0" izz="0.000102709" />
+        </inertial>
+        <visual>
+            <origin xyz="0.0113697 0.0617549 -0.105929" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/shoulder_arm.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="0.0113697 0.0617549 -0.105929" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/shoulder_arm.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <link name="wrist">
+        <inertial>
+            <mass value="0.0349991" />
+            <origin xyz="0.0272531 6.78038e-05 -0.0302115" rpy="0 -0 0" />
+            <inertia ixx="1.70237e-05" ixy="0" ixz="0" iyy="3.1539e-05" iyz="0" izz="2.10098e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0.0126699 0.0987808 -0.135201" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/wrist.stl" scale="1 1 1" />
+            </geometry>
+      <material name="printed"/>
+        </visual>
+    <collision><origin xyz="0.0126699 0.0987808 -0.135201" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="asset/wrist.stl" scale="1 1 1" />
+            </geometry>
+            </collision></link>
+    <joint name="Fastened_11_0" type="fixed">
+        <origin xyz="0.0142642 0.0082969 -0.0218437" rpy="0 1.5708 -3.14159" />
+        <axis xyz="1 0.0 0.0" />
+        <parent link="base_plate" />
+        <child link="servo_gripperAct" />
+    </joint>
+
+    <joint name="Fastened_2_0" type="fixed">
+        <origin xyz="-0.00265 0.00151296 0.068822" rpy="0 1.5708 -1.5708" />
+        <axis xyz="-1 0.0 0.0" />
+        <parent link="base" />
+        <child link="servo_shoulderpan" />
+    </joint>
+    <joint name="Fastened_3_0" type="fixed">
+        <origin xyz="-0.0163408 -0.0242397 0.00514968" rpy="-0 0 -0" />
+        <axis xyz="1 0.0 0.0" />
+        <parent link="shoulder" />
+        <child link="servo_shouldArm_should" />
+    </joint>
+    <joint name="Fastened_4_0" type="fixed">
+        <origin xyz="0.002 0.10475 0.000459714" rpy="-0 0 -0" />
+        <axis xyz="1 0.0 0.0" />
+        <parent link="shoulder_arm" />
+        <child link="servo_elbow_ShA" />
+    </joint>
+    <joint name="Fastened_5_0" type="fixed">
+        <origin xyz="0.0023 -0.123046 0.0101138" rpy="1.5708 0 0" />
+        <axis xyz="-1 -0.0 -0.0" />
+        <parent link="elbow_arm" />
+        <child link="servo_Wrist_elbow" />
+    </joint>
+    <joint name="Fastened_6_0" type="fixed">
+        <origin xyz="0.0472 0.010463 -0.0675192" rpy="0 -1.5708 0.00297141" />
+        <axis xyz="1 0.0 0.0" />
+        <parent link="wrist" />
+        <child link="servo_WristRoll" />
+    </joint>
+    <joint name="Fastened_7_0" type="fixed">
+        <origin xyz="0.0 0.0133 0.00499983" rpy="0.0 -0.0 0.0" />
+        <axis xyz="0 -1 0" />
+        <parent link="adapter_head" />
+        <child link="base_plate" />
+    </joint>
+    <joint name="Fastened_8_0" type="fixed">
+        <origin xyz="0.0 0.0 0.004" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+        <parent link="servotip" />
+        <child link="servotip_1" />
+    </joint>
+
+    <joint name="Revolute_1_0" type="continuous">
+        <origin xyz="-0.0027 -0.01025 0.029" rpy="0 -1.5708 -0" />
+        <axis xyz="0 0 -1" />
+        <parent link="servo_gripperAct" />
+        <child link="servotip" />
+      
+    </joint>
+    <joint name="Revolute_2_0" type="continuous">
+        <origin xyz="-0.0134847 0.0390747 -0.0072" rpy="3.13862 0 3.14159" />
+        <axis xyz="0.0 -0.00297141 0.999996" />
+        <parent link="base_plate" />
+        <child link="crank_right" />
+                  <mimic joint="Revolute_1_0" multiplier="-0.52" offset="0.0"/>
+    </joint>
+    <joint name="Revolute_3_0" type="continuous">
+        <origin xyz="0.0134847 0.0390747 -0.0072" rpy="3.13862 0 -3.14159" />
+        <axis xyz="0.0 -0.00297141 0.999996" />
+        <parent link="base_plate" />
+        <child link="crank_left" />
+                   <mimic joint="Revolute_2_0" multiplier="-1.0" offset="0.0"/>
+    </joint>
+    <joint name="Revolute_4_0" type="continuous">
+        <origin xyz="0.00524 0.0594811 -0.0027" rpy="-0.00297141 -0 3.13461" />
+        <axis xyz="0.0 0.00297141 -0.999996" />
+        <parent link="base_plate" />
+        <child link="rocker_left" />
+                  <mimic joint="Revolute_3_0" multiplier="1.0" offset="0.0"/>
+    </joint>
+    <joint name="Revolute_5_0" type="continuous">
+        <origin xyz="-0.00524 0.0594811 -0.0027" rpy="3.13862 0 -3.13461" />
+        <axis xyz="0.0 0.00297141 -0.999996" />
+        <parent link="base_plate" />
+        <child link="rocker_left_1" />
+                  <mimic joint="Revolute_2_0" multiplier="-1.0" offset="-6.28318530717958"/>
+    </joint>
+    <joint name="Revolute_7_0" type="continuous">
+        <origin xyz="0.0449997 0.00015797 -0.000299532" rpy="-0 -2.07441e-05 0.00698127" />
+        <axis xyz="0.0 -0.00297141 0.999996" />
+        <parent link="rocker_left_1" />
+        <child link="coupler_right" />
+                  <mimic joint="Revolute_2_0" multiplier="-1.0" offset="6.28318530717958"/>
+    </joint>
+    <joint name="Revolute_9_0" type="continuous">
+        <origin xyz="-0.0449997 -0.00015797 0.000299532" rpy="3.14159 -2.07442e-05 0.00698129" />
+        <axis xyz="0.0 -0.00297141 0.999996" />
+        <parent link="rocker_left" />
+        <child link="coupler_left" />
+                  <mimic joint="Revolute_3_0" multiplier="-1.0" offset="6.28318530717958"/>
+    </joint>
+
+    <joint name="sArm_shoulder_0" type="continuous">
+        <origin xyz="-0.0026 -0.01025 0.029" rpy="0.00170445 -0 -0" />
+        <axis xyz="1 0.0 0.0" />
+        <parent link="servo_shouldArm_should" />
+        <child link="shoulder_arm" />
+    </joint>
+    <joint name="shoulder_baselink_0" type="continuous">
+        <origin xyz="-0.0028 0.01025 0.029" rpy="-1.5708 0 1.5708" />
+        <axis xyz="0 0 -1" />
+        <parent link="servo_shoulderpan" />
+        <child link="shoulder" />
+    </joint>
+    <joint name="shoulder_elbow_0" type="continuous">
+        <origin xyz="-0.0029 0.01025 0.029" rpy="0.00170445 -0 0" />
+        <axis xyz="1 0 0" />
+        <parent link="servo_elbow_ShA" />
+        <child link="elbow_arm" />
+    </joint>
+    <joint name="wrist_elbow_0" type="continuous">
+        <origin xyz="-0.0028 -0.01025 0.029" rpy="1.57421 -0 0" />
+        <axis xyz="1 0.0 0.0" />
+        <parent link="servo_Wrist_elbow" />
+        <child link="wrist" />
+    </joint>
+    <joint name="wrist_roll_0" type="continuous">
+        <origin xyz="-0.0025 -0.01025 0.029" rpy="0 -1.5708 -4.71239" />
+        <axis xyz="0 -1 0" />
+        <parent link="servo_WristRoll" />
+        <child link="adapter_head" />
+    </joint>
+</robot>
