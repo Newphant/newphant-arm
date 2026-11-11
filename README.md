@@ -30,3 +30,7 @@ ros2 run newphant_arm_isaac slider_node
 Topics: `/newphant_arm/raw_angles` (slider output), `/joint_command` (targets),
 `/joint_states` (state). Open `assets/usd/NewPhant_arm_usd.usd` in Isaac Sim and
 press play before starting the nodes.
+
+## License
+
+The code in this repository is released under the MIT License. See [LICENSE](LICENSE).
