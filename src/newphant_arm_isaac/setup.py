@@ -15,8 +15,8 @@ setup(
     zip_safe=True,
     maintainer='newphant',
     maintainer_email='3584046379@qq.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='ROS 2 control bridge, slider GUI and diagnostics for a 6-DOF 3D-printed arm.',
+    license='MIT',
     extras_require={
         'test': [
             'pytest',

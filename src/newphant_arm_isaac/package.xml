@@ -3,9 +3,9 @@
 <package format="3">
   <name>newphant_arm_isaac</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>ROS 2 control bridge, slider GUI and diagnostics for a 6-DOF 3D-printed arm.</description>
   <maintainer email="3584046379@qq.com">newphant</maintainer>
-  <license>TODO: License declaration</license>
+  <license>MIT</license>
 
   <depend>rclpy</depend>
   <depend>sensor_msgs</depend>
